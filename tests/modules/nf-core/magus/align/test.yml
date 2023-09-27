@@ -6,7 +6,7 @@
   files:
     - path: output/magus/test.aln
       contains:
-        - '# TODO nf-core: file md5sum was variable, please replace this text with a string found in the file instead '
+        - 'sample'
     - path: output/magus/versions.yml
 
 - name: magus align test_magus_align_with_guide_tree
@@ -17,8 +17,8 @@
   files:
     - path: output/magus/test.aln
       contains:
-        - '# TODO nf-core: file md5sum was variable, please replace this text with a string found in the file instead '
+        - 'sample'
     - path: output/magus/test.tree
       contains:
-        - '# TODO nf-core: file md5sum was variable, please replace this text with a string found in the file instead '
+        - 'sample'
     - path: output/magus/versions.yml
