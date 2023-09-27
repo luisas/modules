@@ -6,7 +6,7 @@ workflow test_magus_guidetree {
 
     input = [
         [ id:'test' ], // meta map
-        file(params.test_data['sarscov2']['illumina']['contigs_fasta'], checkIfExists: true)
+        file(params.test_data['sarscov2']['genome']['informative_sites_fas'], checkIfExists: true)
     ]
 
     MAGUS_GUIDETREE ( input )

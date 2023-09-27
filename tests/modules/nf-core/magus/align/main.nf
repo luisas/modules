@@ -7,7 +7,7 @@ workflow test_magus_align {
 
     input = [
         [ id:'test' ], // meta map
-        file(params.test_data['sarscov2']['illumina']['contigs_fasta'], checkIfExists: true)
+        file(params.test_data['sarscov2']['genome']['informative_sites_fas'], checkIfExists: true)
     ]
 
     MAGUS_ALIGN ( input, [ [:], [ ] ] )
@@ -17,7 +17,7 @@ workflow test_magus_align_with_guide_tree {
 
     input = [
         [ id:'test' ], // meta map
-        file(params.test_data['sarscov2']['illumina']['contigs_fasta'], checkIfExists: true)
+        file(params.test_data['sarscov2']['genome']['informative_sites_fas'], checkIfExists: true)
     ]
 
     guide_tree = MAGUS_GUIDETREE ( input ).tree

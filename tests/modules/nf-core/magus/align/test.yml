@@ -1,21 +1,24 @@
 - name: magus align test_magus_align
-  command: nextflow run ./tests/modules/nf-core/magus/align -entry test_magus_align -c ./tests/config/nextflow.config -c ./tests/modules/nf-core/magus/align/nextflow.config
+  command: nextflow run ./tests/modules/nf-core/magus/align -entry test_magus_align -c ./tests/config/nextflow.config
   tags:
-    - magus/align
     - magus
+    - magus/align
   files:
     - path: output/magus/test.aln
-      md5sum: 112100ff69bc49de28f129d811b988e5
+      contains:
+        - '# TODO nf-core: file md5sum was variable, please replace this text with a string found in the file instead '
     - path: output/magus/versions.yml
 
 - name: magus align test_magus_align_with_guide_tree
-  command: nextflow run ./tests/modules/nf-core/magus/align -entry test_magus_align_with_guide_tree -c ./tests/config/nextflow.config -c ./tests/modules/nf-core/magus/align/nextflow.config
+  command: nextflow run ./tests/modules/nf-core/magus/align -entry test_magus_align_with_guide_tree -c ./tests/config/nextflow.config
   tags:
-    - magus/align
     - magus
+    - magus/align
   files:
     - path: output/magus/test.aln
-      md5sum: 8fef1bbc529bd0a75e41eb6c2f5b439d
+      contains:
+        - '# TODO nf-core: file md5sum was variable, please replace this text with a string found in the file instead '
     - path: output/magus/test.tree
-      md5sum: 3351990418214338ed88629bfffb719b
+      contains:
+        - '# TODO nf-core: file md5sum was variable, please replace this text with a string found in the file instead '
     - path: output/magus/versions.yml

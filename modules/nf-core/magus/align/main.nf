@@ -4,12 +4,12 @@ process MAGUS_ALIGN {
 
     conda "bioconda::magus-msa=0.1.2"
     container "${ workflow.containerEngine == 'singularity' && !task.ext.singularity_pull_docker_container ?
-        'https://depot.galaxyproject.org/singularity/magus-msa:0.1.2--pyhdfd78af_0 ':
-        'biocontainers/magus-msa:0.1.2--pyhdfd78af_0 ' }"
+        'https://depot.galaxyproject.org/singularity/magus-msa:0.1.2--pyhdfd78af_0':
+        'biocontainers/magus-msa:0.1.2--pyhdfd78af_0' }"
 
     input:
     tuple val(meta_fasta), path(fasta)
-    tuple val(meta_tree), path(tree)
+    tuple val(meta_tree) , path(tree)
 
     output:
     tuple val(meta), path("*.aln"), emit: alignment
